@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@400;700&family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+*::selection{
+    background-color: teal;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    --primary_color:purple;
+    --bg_color:#0d0a12;
+    --text_color:white;
+    background-color: var(--bg_color);
+    color: var(--text_color);
+    width: 100vw;
+    overflow-x: hidden;
+}
+header{
+    background: linear-gradient(rgba(64, 3, 64, 0.777), rgba(33, 28, 28, 0.8)), url("Screenshot\ 2023-06-16\ 191223.png"); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--bg_color);
+    height: 100vh;
+    height: 100dvh;
+    position: relative;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    justify-content: center;
+    gap: 2.2rem;
+    padding-top: 2rem;
+    color: white;
+}
+li{
+    position: relative;
+    color: rgb(159, 172, 184);
+}
+li:hover{
+    color: var(--text_color);
+}
+li::before{
+    position: absolute;
+    content: " ";
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+    background: var(--text_color);
+    scale: 0;
+    transition: scale 180ms ease-in-out;
+}
+li:hover::before{
+    scale: 1;
+}
+
+.hero{
+    padding-top: 6rem;
+    color: aliceblue;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+p{
+    color: rgb(159, 172, 184);
+}
+
+.container{
+    padding-top: 7rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-inline: 6rem;
+}
+
+.card{
+    width: 25vw;
+    border: 2px solid white;
+    height: 35vh;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.card-header{
+    border-bottom: 2px solid white;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.card-body{
+    padding-top: 1.5rem;
+}
+
+button{
+    width: 6rem;
+    padding-block: 0.4rem;
+    border-radius: 2rem;
+    display: block;
+    margin-top: 2rem;
+    margin-inline: auto;
+    cursor: pointer;
+    background-color: rgb(60, 65, 70);
+    border: 2px solid white;
+    color: white;
+    font-size: small;
+}
+
+button:hover{
+    color: rgb(60, 65, 70);
+    background-color: white;
+    border: 2px solid rgb(60, 65, 70);
+}
